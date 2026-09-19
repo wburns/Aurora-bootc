@@ -32,4 +32,4 @@ systemctl enable podman.socket
 
 # Remove leftovers from dnf
 dnf clean all && \
-    rm -rf /var/cache /var/lib/dnf/* /run/dnf/* /run/selinux/*
+    rm -rf /var/cache/dnf /var/lib/dnf/* /run/dnf/* /run/selinux/*
