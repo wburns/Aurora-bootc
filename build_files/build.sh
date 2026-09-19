@@ -29,3 +29,7 @@ dnf remove -y \
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
+
+# Remove leftovers from dnf
+dnf clean all && \
+    rm -rf /var/cache /var/lib/dnf/* /run/dnf/* /run/selinux/*
