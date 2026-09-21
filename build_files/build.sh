@@ -26,8 +26,8 @@ dnf install -y --setopt=tsflags=noscripts netbird
 # dnf5 -y install package
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
-#dnf remove -y \
-#	code
+dnf remove -y \
+	code
 
 #### Example for enabling a System Unit File
 
