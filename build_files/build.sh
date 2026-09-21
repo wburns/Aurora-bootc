@@ -14,7 +14,9 @@ cp -avf "/ctx/system_files"/. /
 
 # this installs a package from fedora repos
 dnf5 install -y tmux \
-	xdg-utils
+	xdg-utils \
+	libxcrypt-compat.x86_64 \
+	google-cloud-cli
 
 dnf install -y --setopt=tsflags=noscripts netbird
 
