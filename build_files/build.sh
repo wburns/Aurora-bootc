@@ -13,8 +13,12 @@ cp -avf "/ctx/system_files"/. /
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y tmux \
-	netbird
+dnf5 install -y tmux
+
+# Avoid netbird scripts
+dnf5 download netbird && \
+    rpm -ivh --noscripts netbird*.rpm && \
+    rm -f netbird*.rpm
 
 # Use a COPR Example:
 #
