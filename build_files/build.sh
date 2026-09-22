@@ -16,7 +16,8 @@ cp -avf "/ctx/system_files"/. /
 dnf5 install -y tmux \
 	xdg-utils \
 	libxcrypt-compat.x86_64 \
-	google-cloud-cli
+	google-cloud-cli \
+	kitty
 
 dnf install -y --setopt=tsflags=noscripts netbird
 
